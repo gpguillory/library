@@ -2,34 +2,44 @@
 <html>
     <head>
         <link rel="stylesheet" href="styles.css">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100&family=Roboto:ital,wght@0,100;1,100&display=swap" rel="stylesheet">
+        <script src="https://www.gstatic.com/firebasejs/7.14.3/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.14.3/firebase-analytics.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.14.3/firebase-database.js"></script>
+        <h1>TOP Library</h1>
     </head>
     <body>
+      <h2>Add New Book</h2>
+      <button type="button" id="newBook">New Book</button>
+      <div id="form container">
+        <br>
+        <form id="form" action=''>
+          <input id="addTitle" type="text" placeholder="Title">
+          <input id="addAuthor" type="text" placeholder="Author">
+          <input id="addPages" type="number" placeholder="Number of Pages">
+          <input id="Read" value ="Read" type="radio">
+          <label for="Read">Read</label>
+          <input id="Not Read" type="radio">
+          <label for="Not Read">Not Read</label>
+          <button id="addBook" type="submit">Add Book</button>
+          <button id="cancelBook">Cancel</button>
+        </form>
+      </div>
+      <div id="results">
+
+      </div>
         
     </body>
     <!-- The core Firebase JS SDK is always required and must be listed first -->
-<script src="https://www.gstatic.com/firebasejs/7.14.3/firebase-app.js"></script>
+
 
 <!-- TODO: Add SDKs for Firebase products that you want to use
      https://firebase.google.com/docs/web/setup#available-libraries -->
 
      <script>
-        // Your web app's Firebase configuration
-        var firebaseConfig = {
-          apiKey: "AIzaSyAd5MHqK46LGde06gRU-yQrx42tukxDtZs",
-          authDomain: "top-library-project.firebaseapp.com",
-          databaseURL: "https://top-library-project.firebaseio.com",
-          projectId: "top-library-project",
-          storageBucket: "top-library-project.appspot.com",
-          messagingSenderId: "776792451831",
-          appId: "1:776792451831:web:6e77544a2d8179264301f2",
-          measurementId: "G-41P4M67DPD"
-        };
-        // Initialize Firebase
-        firebase.initializeApp(firebaseConfig);
-        firebase.analytics();
-      </script>
+        
+     </script>
       
-<script src="https://www.gstatic.com/firebasejs/7.14.3/firebase-analytics.js"></script>
 
     <script src = "./javascript.js"></script>
 </html>
